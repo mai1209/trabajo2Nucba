@@ -193,8 +193,9 @@ i {
 }
 
 .description-text {
-  max-width: 500px;
-  padding-top: 40px;
+  max-width: 800px;
+  padding: 40px;
+  text-align: center;
 }
 
 @media (max-width: 1089px) {
@@ -213,10 +214,11 @@ i {
 
   .info-home {
     gap: 100px;
+    justify-content: center;
   }
 
   .slogan {
-    font-size: 45px;
+    font-size: 50px;
   }
 }
 
