@@ -13,6 +13,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Ysabeau Office", sans-serif;
+ 
 }
 
 /*estilos nav*/
@@ -70,7 +71,35 @@ i {
 }
 
 .img-logo {
-  height: 150px;
+  height: 130px;
+}
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 1089px) {
+  .container {
+    height: 100px;
+    background-color: rgb(51, 49, 49);
+  }
+
+  .container-link {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+    padding: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text);
+    font-size: 25px;
+  }
+
+  .img-logo {
+    height: 90px;
+  }
 }
 
 /*estilos Home*/
@@ -83,11 +112,9 @@ i {
   background-size: cover;
   background-attachment: scroll;
   height: 100vh;
-  padding-top: 140px;
   display: flex;
   justify-content: center;
   gap: 200px;
-  padding: 5px;
   box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
 }
 
@@ -107,8 +134,13 @@ i {
 
 .slogan {
   width: 100%;
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: 1000;
   text-align: left;
+  color: transparent;
+  background: linear-gradient(to right, rgb(209, 206, 206), rgb(12, 194, 204));
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .btn {
@@ -151,7 +183,6 @@ i {
 }
 
 .description {
-  height: 100vh;
   background-color: var(--background-menu);
   color: var(--color-text);
   padding: 40px;
@@ -163,5 +194,173 @@ i {
 
 .description-text {
   max-width: 500px;
+  padding-top: 40px;
+}
 
+@media (max-width: 1089px) {
+  .home {
+    padding: 500px 50px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 90px;
+    box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
+  }
+
+  .img-home {
+    height: 150px;
+    width: 150px;
+  }
+
+  .info-home {
+    gap: 100px;
+  }
+
+  .slogan {
+    font-size: 45px;
+  }
+}
+
+/*estilos ventajas*/
+
+.advantages {
+  background-color: var(--background-menu);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: var(--color-text);
+}
+
+.description-advantages {
+  background-color: var(--background-menu);
+  color: var(--color-text);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  padding: 20px;
+  gap: 15px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  height: 200px;
+  padding: 10px;
+  background-color: rgba(12, 194, 204, 0.26);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+/*estilos contacto*/
+.contact {
+  background: var(--background-menu);
+  color: var(--color-text);
+  text-align: center;
+  padding: 80px;
+}
+
+.info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ 
+
+  padding-top: 50px;
+}
+
+.box-1,
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-1,
+.info-2,
+.info-3 {
+  display: flex;
+  gap: 10px;
+}
+
+.direccion-contact {
+  font-size: 20px;
+}
+
+.box-direction{
+  display: flex;
+  gap: 49px;
+  padding-top: 0px;
+}
+
+@media (max-width: 1089px) {
+  .info-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+    padding-top: 0px;
+  }
+
+  .box-direction{
+    display: flex;
+    gap: 40px;
+    padding-top: 40px;
+  
+    
+  }
+}
+
+
+
+
+
+/*estilos footer*/
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  background-color: var(--background-menu);
+}
+
+.img-logo{
+  height: 80px;
+  width: 80px;
+}
+
+.links-footer{
+  display: flex;
+  gap: 20px;
+}
+
+.img-link {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+
+}
+
+@media (max-width: 1089px) {
+  .info-box {
+    flex-direction: column;
+  }
+
+ 
 }
