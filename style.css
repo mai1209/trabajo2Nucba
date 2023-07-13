@@ -3,7 +3,7 @@
 :root {
   --background-menu: rgb(51, 49, 49);
   --hover: rgb(12, 194, 204);
-  --color-text: rgb(209, 206, 206);
+  --color-text: rgb(255, 255, 255);
   --color-text-home: rgb(240, 236, 236);
 }
 
@@ -13,7 +13,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Ysabeau Office", sans-serif;
- 
+  scroll-behavior:  smooth ;
 }
 
 /*estilos nav*/
@@ -110,11 +110,11 @@ i {
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 200px;
+  padding-top: 130px;
   box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
 }
 
@@ -123,6 +123,7 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding:  10px 20px; ;
   gap: 30px;
 }
 
@@ -170,18 +171,6 @@ i {
   cursor: pointer;
 }
 
-.img-home {
-  width: 200px;
-  height: 200px;
-}
-
-.img-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
-}
-
 .description {
   background-color: var(--background-menu);
   color: var(--color-text);
@@ -200,25 +189,26 @@ i {
 
 @media (max-width: 1089px) {
   .home {
-    padding: 500px 50px;
+    padding: 300px 20px;
     flex-direction: column;
     justify-content: center;
     gap: 90px;
     box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
   }
 
-  .img-home {
-    height: 150px;
-    width: 150px;
-  }
-
   .info-home {
-    gap: 100px;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
   }
 
   .slogan {
     font-size: 50px;
+    text-align: center;
+  }
+
+  .text-home {
+    text-align: center;
   }
 }
 
@@ -263,6 +253,30 @@ i {
   background-color: rgba(12, 194, 204, 0.26);
   color: var(--color-text);
   font-weight: 600;
+  max-width: 300px;
+}
+
+@media (max-width: 400px) {
+  .card {
+    gap: 5px;
+    padding: 0;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 104px;
+    font-weight: 500;
+  }
+
+  .box-direction {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .slogan {
+    padding-top: 120px;
+  }
 }
 
 /*estilos contacto*/
@@ -278,7 +292,6 @@ i {
   justify-content: center;
   align-items: center;
   gap: 100px;
- 
 
   padding-top: 50px;
 }
@@ -301,7 +314,7 @@ i {
   font-size: 20px;
 }
 
-.box-direction{
+.box-direction {
   display: flex;
   gap: 49px;
   padding-top: 0px;
@@ -316,22 +329,14 @@ i {
     padding-top: 0px;
   }
 
-  .box-direction{
+  .box-direction {
     display: flex;
     gap: 40px;
     padding-top: 40px;
-  
-    
   }
 }
 
-
-
-
-
 /*estilos footer*/
-
-
 
 .footer {
   display: flex;
@@ -342,12 +347,12 @@ i {
   background-color: var(--background-menu);
 }
 
-.img-logo{
+.img-logo {
   height: 80px;
   width: 80px;
 }
 
-.links-footer{
+.links-footer {
   display: flex;
   gap: 20px;
 }
@@ -356,13 +361,10 @@ i {
   width: 35px;
   height: 35px;
   cursor: pointer;
-
 }
 
 @media (max-width: 1089px) {
   .info-box {
     flex-direction: column;
   }
-
- 
 }
